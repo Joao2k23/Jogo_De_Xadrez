@@ -2,6 +2,7 @@
 using System;
 using System.Globalization;
 using tabuleiro;
+using PROJETO___Sistema_de_jogo_de_xadrez___seção_12;
 
 namespace xadrez_console
 {
@@ -11,6 +12,7 @@ namespace xadrez_console
         {
             Tabuleiro tab = new Tabuleiro(8, 8);
 
+            Tela.ImprimirTabuleiro(tab);
             Console.ReadLine();
         }
     }
