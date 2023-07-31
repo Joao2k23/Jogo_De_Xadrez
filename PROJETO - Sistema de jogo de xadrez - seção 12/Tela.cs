@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using tabuleiro;
+using xadrez;
 
 namespace PROJETO___Sistema_de_jogo_de_xadrez___seção_12
 {
@@ -31,6 +32,14 @@ namespace PROJETO___Sistema_de_jogo_de_xadrez___seção_12
                 Console.WriteLine();
             }
             Console.WriteLine("  a b c d e f g h  ");
+        }
+
+        public static PosicaoXadrez lerPosicaoXadrez()
+        {
+            string s = Console.ReadLine();
+            char coluna = s[0];
+            int linha = int.Parse(s[1] + "");
+            return new PosicaoXadrez(coluna, linha);
         }
 
         public static void ImprimirPeca(Peca peca)
