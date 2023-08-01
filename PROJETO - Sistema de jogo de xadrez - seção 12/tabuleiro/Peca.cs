@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace tabuleiro
 {
-    class Peca
+    abstract class Peca
     {
         public Posicao posicao { get; set; }
         public Cor cor { get; protected set; }  // só pode ser acessada por ela mesma e pela subclasse
@@ -26,5 +26,7 @@ namespace tabuleiro
         {
             qteMovimentos++;
         }
+
+        public abstract bool[,] movimentosPossiveis();
     }
 }
