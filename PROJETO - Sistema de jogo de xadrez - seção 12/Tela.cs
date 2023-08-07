@@ -18,6 +18,11 @@ namespace PROJETO___Sistema_de_jogo_de_xadrez___seção_12
             imprimirPecasCapturadas(partida);
             Console.WriteLine("Turno: " + partida.turno);
             Console.WriteLine("Aguardando jogada: " + partida.jogadorAtual);
+            if (partida.xeque)
+            {
+                Console.WriteLine("XEQUE!");
+            }
+            
         }
 
         public static void imprimirPecasCapturadas(PartidaDeXadrez partida)
@@ -31,7 +36,6 @@ namespace PROJETO___Sistema_de_jogo_de_xadrez___seção_12
             Console.ForegroundColor = ConsoleColor.Yellow;
             imprimirConjunto(partida.pecasCapturadas(Cor.Preta));
             Console.ForegroundColor = aux;
-            Console.WriteLine();
             Console.WriteLine();
         }
 

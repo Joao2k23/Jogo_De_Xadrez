@@ -63,10 +63,8 @@ namespace tabuleiro
             {
                 return false;
             }
-            else
-            {
-                return true;
-            }
+            return true;
+
         }
 
         public void validarPosicao(Posicao pos)
